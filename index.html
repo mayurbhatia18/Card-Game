@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Card Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Righteous" rel="stylesheet">
+  </head>
+  <body>
+<section id="header">
+<h1 class = "heading-main">Card Game</h1>
+<h2 class = "sub-heading">1. Select a card and click on play</h2>
+</section>
+
+<section id="main-content">
+    <div class = "container tables">
+      <form>
+    <div class="row flip-card">
+      <div class="col-md-3 flip-card-inner">
+        <div class="flip-card-front">
+          <label>
+            <input type="radio" name="card" value="2C">
+            <img src="images/cards/2C.png" class= "play-card card0" alt="card">
+          </label>
+        </div>
+        <div class="flip-card-back">
+            <img src="images/cards/red_back.png" class= "play-card card0" alt="card">
+        </div>
+      </div>
+      <div class="col-md-3 flip-card-inner">
+        <div class="flip-card-front">
+          <label>
+            <input type="radio" name="card" value="3C">
+            <img src="images/cards/3C.png" class= "play-card card1" alt="card">
+          </label>
+        </div>
+        <div class="flip-card-back">
+            <img src="images/cards/red_back.png" class= "play-card card1" alt="card">
+        </div>
+      </div>
+      <div class="col-md-3 flip-card-inner">
+        <div class="flip-card-front">
+          <label>
+            <input type="radio" name="card" value="4C">
+            <img src="images/cards/4C.png" class= "play-card card2" alt="card">
+          </label>
+        </div>
+        <div class="flip-card-back">
+            <img src="images/cards/red_back.png" class= "play-card card2" alt="card">
+        </div>
+      </div>
+      <div class="col-md-3 flip-card-inner">
+        <div class="flip-card-front">
+          <label>
+            <input type="radio" name="card" value="5C">
+            <img src="images/cards/5C.png" class= "play-card card3" alt="card">
+          </label>
+        </div>
+        <div class="flip-card-back">
+            <img src="images/cards/red_back.png" class= "play-card card3" alt="card">
+        </div>
+      </div>
+    </div>
+    <button type="button" name="button" class="btn btn-dark btn-lg shuffle" onclick="shuffle()">Shuffle</button>
+    <button type="button" name="button" class="btn btn-outline-dark btn-lg play" onclick="play()"> Play</button>
+    </form>
+    <div class="selected-card">
+      <h4>Selected Card</h4>
+        <img src="images/cards/5C.png" class= "play-card card4" alt="card">
+    </div>
+  </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

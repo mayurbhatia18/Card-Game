@@ -1,0 +1,85 @@
+body{
+  text-align: center;
+  background-color: #ffd98e;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.heading-main{
+  font-family: "Righteous", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  padding: 2%;
+}
+
+.tables{
+  /* background-image: url("images/table.jpg"); */
+  background-color: #ffb677;
+  box-shadow:2px 2px 5px gray;
+  height: 400px;
+  width: 800px;
+  margin-top: 30px;
+}
+
+.flip-card{
+  
+}
+
+.flip-card-inner{
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.rotate {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flip-card-back{
+  transform: rotateY(180deg);
+}
+
+
+
+.play-card{
+  width:80%;
+  margin-top: 30%;
+  border-radius: 15px;
+}
+
+.play-card:hover{
+  box-shadow: 0 0 5px 2px black;
+}
+
+.shuffle{
+  margin:6%;
+}
+
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  box-shadow: 0 0 5px 2px black;
+}
+
+.selected-card{
+  position: absolute;
+  right:50px;
+  top:130px;
+  height: 200px;
+  width: 200px;
+  visibility: hidden;
+}
